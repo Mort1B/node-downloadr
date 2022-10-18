@@ -42,18 +42,18 @@ const getAndDecodeChunkData = async (offset) => {
 // getAndDecodeChunkData function and subtracting the length/size of each vector of bytes until we reach offset - size.
 // The other way(2) is by subtracting the size before the loop and adding the length/size of each vector of bytes until we reach the
 // end_offset.
-// By commenting *in* line 50, 67-77 and commenting *out* line 55-67 you can run the code that does it the second way(2).
+// By commenting *in* line 67-77 and commenting *out* line 54-65 you can run the code that does it the second way(2).
 const writeToFile = async (tx) => {
   const result = await getTxOffsetData(tx);
   const size = parseInt(result.size);
   const offset = parseInt(result.offset);
-//   const offsetStart = offset - size + 1;
+  const offsetStart = offset - size + 1;
 
   const data = new Uint8Array(size);
 
   let chunk = offset;
 
-  while (chunk > offset - size) {
+  while (chunk > offsetStart) {
     const chunkData = await getAndDecodeChunkData(chunk);
 
     if (chunkData) {
