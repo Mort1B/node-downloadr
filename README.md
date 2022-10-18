@@ -1,6 +1,7 @@
 node-downloadr
 
-Downloads a whole transaction from arweave.
+download arweave tx-data in js by splitting it up in chunks of data, appending them to an array and priting to file
+
 
 To run:
 
