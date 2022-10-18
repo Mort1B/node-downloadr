@@ -4,7 +4,7 @@ Downloads a whole transaction from arweave.
 
 To run:
 
-***npm install
+***npm install***
 
 ***node downloader.js --transaction <tx_id> --output <file_name>
 
