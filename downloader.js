@@ -38,7 +38,7 @@ const getAndDecodeChunkData = async (offset) => {
 };
 
 
-// There are two ways of doing this, either(1) by starting at the size/ length of the vector we are given from calling the
+// There are two ways of doing this, either(1) by starting at the size/ length of the buffer we are given from calling the
 // getAndDecodeChunkData function and subtracting the length/size of each vector of bytes until we reach offset - size.
 // The other way(2) is by subtracting the size before the loop and adding the length/size of each vector of bytes until we reach the
 // end_offset.
