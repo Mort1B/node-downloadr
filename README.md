@@ -4,7 +4,7 @@ download arweave tx-data in js by splitting it up in chunks of data, appending t
 
 ### some "benchmarking"
 
-| Method         | Debug build                                              |
+| Method         |                                                          |
 |:--------------:|:--------------------------------------------------------:|
 | fs.writeFile(1)| 81s - 11s - 82s - 11s - 11s - 11s - 11s - 11s - 11s - 11s|
 | fs.writeFile(2)| 93s - 11s - 11s - 11s - 11s - 11s - 11s - 11s - 12s - 11s|
